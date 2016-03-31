@@ -1,0 +1,15 @@
+{
+    "name": "donny/database",
+    "authors": [
+        {
+            "name": "Donny van Walsem",
+            "email": "donnehvw@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Donny\\": "src/"
+        }
+    }
+}
