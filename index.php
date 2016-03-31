@@ -4,8 +4,9 @@ require "vendor/autoload.php";
 
 $config = [
     "driver" => 'Mysql',
+    'host' => 'localhost',
     'username' => 'root',
-    'password' => '',
+    'password' => 'secret',
     'name' => 'example'
 ];
 

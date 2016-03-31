@@ -15,8 +15,17 @@ namespace Donny;
 class MysqlConnection implements ConnectionInterface
 {
 
-    public function connect()
+    /**
+     * Create and return a new PDO connection.
+     *
+     * @param $host
+     * @param $username
+     * @param $password
+     * @param $database
+     * @return \PDO
+     */
+    public function connect($host, $username, $password, $database)
     {
-        return new \PDO('mysql:host=localhost;dbname=example', 'root', 'lollol33');
+        return new \PDO("mysql:host={$host};dbname={$database}", $username, $password);
     }
 }
